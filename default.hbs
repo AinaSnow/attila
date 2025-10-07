@@ -74,7 +74,7 @@
 				{{/if}}
 				{{navigation}}
 				<a class="nav-search" title="{{t "Search"}}" aria-label="{{t "Search"}}" data-ghost-search><i class="icon icon-search" aria-hidden="true">{{> "icons/icon-search"}}</i></a>
-				{{#if @site.members_enabled}}
+				{{!-- {{#if @site.members_enabled}}
 					<span class="nav-members">
 						{{#unless @member}}
 							{{#unless @site.members_invite_only}}
@@ -89,7 +89,7 @@
 							<a class="nav-button-secondary" href="#/portal/account" data-portal="account">{{t "Account"}}</a>
 						{{/unless}}
 					</span>
-				{{/if}}
+				{{/if}}--}}  {{!--不是我需要的登录与订阅框直接注释--}}
 			</nav>
 
 			<div class="nav-wrapper-control">
