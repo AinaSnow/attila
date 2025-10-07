@@ -1,6 +1,10 @@
 /* ==========================================================================
    Includes
    ========================================================================== */
+:root {
+  --gh-font-heading: 'LXGW Bright Medium',sans-serif; /* 标题字体 */
+  --gh-font-body: 'LXGW Bright Medium', sans-serif;    /* 正文字体 */
+}
 @use "normalize";
 @use "colors";
 @use "highlight";
