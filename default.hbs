@@ -13,6 +13,7 @@
 
 	{{!-- Styles'n'Scripts --}}
 	<link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+	<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
 
 	<script>
 			var siteUrl = '{{@site.url}}';
@@ -100,7 +101,7 @@
 		</div>
 		<div class="nav-close" role="button" aria-label="{{t "Close"}}"></div>
 
-		<section class="page-wrapper">
+		<section class="page-wrapper han-init-context">
 
 			{{{body}}}
 
@@ -124,7 +125,7 @@
 
 	{{!-- Load basic scripts --}}
 	<script type="text/javascript" src="{{asset "js/script.js"}}"></script>
-
+	<script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
 	{{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
 	{{{block "scripts"}}}
 
